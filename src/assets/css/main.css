@@ -7,7 +7,7 @@
   --background: var(--color-slate-200);
   --foreground: var(--color-slate-950);
   --card: var(--color-slate-50);
-  --card-foreground: var(--color-slate-500);
+  --card-foreground: var(--color-slate-700);
 
   @variant dark {
     --backgounrd: var(--color-slate-800);
@@ -25,4 +25,24 @@
   /* Card background and foreground color */
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
+
+  --animate-collapsible-slide-down: collapsible-slide-down 300ms ease-out;
+  @keyframes collapsible-slide-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--reka-collapsible-content-height);
+    }
+  }
+
+  --animate-collapsible-slide-up: collapsible-slide-up 300ms ease-out;
+  @keyframes collapsible-slide-up {
+    from {
+      height: var(--reka-collapsible-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
 }
