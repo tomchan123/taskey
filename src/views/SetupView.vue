@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import TaskeyCard from '@/components/ui/TaskeyCard.vue'
+import PlainCard from '@/components/ui/PlainCard.vue'
 </script>
 
 <template>
   <h1>This is the setup page</h1>
-  <TaskeyCard>
+  <PlainCard>
     <p>This is the setup page content</p>
-  </TaskeyCard>
+  </PlainCard>
 </template>
