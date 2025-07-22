@@ -6,9 +6,7 @@ const mode = useColorMode()
 </script>
 
 <template>
-  <div :class="{ dark: mode === 'dark' }" class="bg-background text-foreground h-dvh">
-    <main>
-      <RouterView />
-    </main>
+  <div :class="{ dark: mode === 'dark' }" class="h-dvh bg-background text-foreground">
+    <RouterView />
   </div>
 </template>
