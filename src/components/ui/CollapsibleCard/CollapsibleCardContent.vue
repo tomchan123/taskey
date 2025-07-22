@@ -19,10 +19,10 @@ watchEffect(() => {
       <motion.div
         ref="content-el"
         key="collapsible-card-content"
-        class="overflow-hidden pt-2"
+        class="overflow-hidden"
         :initial="{ height: 0, opacity: 0 }"
         :animate="{ height: contentElHeight, opacity: 1 }"
-        :exit="{ height: 0, opacity: 0 }"
+        :exit="{ height: 0, opacity: 0, padding: 0 }"
         :transition="{
           duration: 0.3,
           ease: 'easeInOut',
