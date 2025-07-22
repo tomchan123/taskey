@@ -6,14 +6,22 @@
 :root {
   --background: var(--color-slate-200);
   --foreground: var(--color-slate-950);
+
   --card: var(--color-slate-50);
   --card-foreground: var(--color-slate-700);
+
+  --muted: var(--color-neutral-300);
+  --muted-foreground: var(--color-neutral-700);
 
   @variant dark {
     --backgounrd: var(--color-slate-800);
     --foreground: var(--color-slate-50);
+
     --card: var(--color-slate-600);
     --card-foreground: var(--color-slate-400);
+
+    --muted: var(--color-gray-600);
+    --muted-foreground: var(--color-gray-400);
   }
 }
 
@@ -25,4 +33,8 @@
   /* Card background and foreground color */
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
+
+  /* Disabled element background and foreground color */
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
 }
