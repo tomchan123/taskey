@@ -13,7 +13,7 @@ const { open, disabled = false } = defineProps<IProps>()
     :open="open"
     :disabled="disabled"
     :unmount-on-hide="true"
-    class="rounded-4xl bg-card px-8 py-4 text-card-foreground data-disabled:bg-muted/50 data-disabled:text-muted-foreground"
+    class="rounded-4xl bg-card px-8 py-4 text-card-foreground"
   >
     <slot />
   </CollapsibleRoot>

@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import CollapsibleCard from '@/components/ui/CollapsibleCard/CollapsibleCard.vue'
-import CollapsibleCardContent from '@/components/ui/CollapsibleCard/CollapsibleCardContent.vue'
-import CollapsibleCardHeader from '@/components/ui/CollapsibleCard/CollapsibleCardHeader.vue'
+import SetupStep from '@/components/setup/SetupStep.vue'
 </script>
 
 <template>
@@ -11,10 +9,9 @@ import CollapsibleCardHeader from '@/components/ui/CollapsibleCard/CollapsibleCa
       <p class="text-foreground/50">To get started, please let us know more about yourself.</p>
     </header>
     <main class="w-full sm:w-xl">
-      <CollapsibleCard :open="true">
-        <CollapsibleCardHeader>Your Details</CollapsibleCardHeader>
-        <CollapsibleCardContent>Name input placeholder</CollapsibleCardContent>
-      </CollapsibleCard>
+      <SetupStep title="Your Details" status="completed" icon="lucide:circle-user">
+        This will be the inputs
+      </SetupStep>
     </main>
   </div>
 </template>
